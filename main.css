@@ -1,0 +1,28 @@
+#hiba{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#info{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 300px;
+    height: 400px;
+    border-left: 3px solid black;
+    display: none;
+    padding: 20px;
+}
+
+li{
+    cursor: pointer;
+}
+
+#torles{
+    display: none;
+}
+
+button{
+    margin-bottom: 20px;
+}
