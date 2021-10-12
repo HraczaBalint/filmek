@@ -1,5 +1,4 @@
 function lekerdezes(adat){
-
     adat.sort((a, b) => {
         return b.year-a.year;
     }).forEach(elem => {
@@ -51,7 +50,6 @@ function lekerdezes(adat){
             };
 
             let a = document.querySelectorAll('a');
-            
             for (var i = 0; i < a.length; i++) {
                 a[i].addEventListener('click', (e) => {
                     e.preventDefault();
@@ -60,7 +58,7 @@ function lekerdezes(adat){
                 });
             };
 
-            document.getElementById("info").style.display = "block";
+            infobox.style.display = "block";
         });
 
         torles.addEventListener('click', () => {
@@ -86,9 +84,7 @@ document.addEventListener("DOMContentLoaded", () =>{
                 );
             }
         }).then(adat => {
-
             lekerdezes(adat);
-            
         }).catch(error => {
             document.getElementById('hiba').innerHTML = error.message;
         });
